@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-family: "Noto Sans Mono", monospace;
+}
+
+nav a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #242321;
+}
+
+nav a.active {
+    color: #f0bb1f;
+    border-bottom: 1px solid #f0d689;
+    padding-bottom: 4px;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+	background-color: #faf5e6;
+}
+
+p, td, th{
+	font-family: "Noto Sans Mono", monospace;
+	line-height: 1.7;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 60px;
+    background-color: #faf5e6;
+    color: #242321;
+}
+
+main {
+    width: 88%;
+    max-width: 1150px;
+	background-color: #faf5e6;
+    margin: auto;
+	
+}
+
+a {
+    color: #242321;
+}
+
+a:hover {
+    color: #f0bb1f;
+}
+
+.site-header {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c9c5bb;
+}
+
+.site-name {
+	font-family: "Noto Sans Mono", monospace;
+    white-space: nowrap;
+	text-decoration: none;
+    color: #543907;
+	font-size: 25px;
+}
+
+.site-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.site-name-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.label {
+    margin-bottom: 12px;
+    color: #f0bb1f;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    max-width: 850px;
+    margin: 0 0 25px;
+    font-family: "Roboto Slab", serif;
+    font-size: clamp(50px, 8vw, 88px);
+    font-weight: normal;
+    line-height: .95;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+}
+
+.home-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.home-intro > div {
+    flex: 1;
+}
+
+.about-image {
+    width: 80%;
+    max-width: 650px;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+	padding-bottom:50px
+}
+
+.intro-image {
+    width: 40%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+.intro-text {
+    max-width: 550px;
+    color: #666057;
+    font-size: 17px;
+}
+
+.featured {
+    padding: 30px 0 100px;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+}
+
+.featured-skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.featured-skill img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.featured-skill img:hover {
+    transform: scale(1.03);
+    filter: brightness(0.9);
+}
+
+.featured-skill h2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 10px 0;
+}
+
+.featured-skill p {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 45px 0 0 0;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skill-caption span{
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #77736b;
+}
+
+.skill-caption h3 {
+    margin: 15px 0 10px;
+    font-family: "Roboto Slab", serif;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.skill-caption p {
+    max-width: 350px;
+    color: #666057;
+}
+
+.skill-caption a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+footer {
+	font-family: "Noto Sans Mono", monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.contact-area {
+    position: relative;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+	position: relative;
+}
+
+#formMessage {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #543907;
+}
+
+.skills-table th:first-child,
+.skills-table td:first-child {
+    padding-right: 60px;
+}
+
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .site-name-container {
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: clamp(42px, 12vw, 65px);
+    }
+
+    .home-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .featured-skill {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-skill h2,
+    .featured-skill p {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .featured-skill p {
+        margin: 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .skills-table {
+        overflow-x: auto;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .site-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .site-name {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .featured {
+        padding-bottom: 80px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 8px;
+    }
+}

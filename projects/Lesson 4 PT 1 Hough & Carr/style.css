@@ -1,0 +1,38 @@
+{margin: 0; padding: 0; box-sizing: border-box;}
+
+h1,h2,h3,p{font-family: 'Ranade', sans-serif;}
+
+label,button{font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"}
+
+body {background-color: #f5efe4; color: #05101a; line-height: 1.6; padding-bottom: 60px;}
+
+.container {width: 85%; max-width: 1100px; margin: 0 auto; padding: 20px;}
+
+.navbar {background-color: #0b253d; padding: 15px 0;}
+
+.nav-links {list-style: none; display: flex; justify-content: center; gap: 30px;font-family: 'Ranade', sans-serif;}
+
+.nav-links a {color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s ease;}
+
+.nav-links a:hover {color: #3498db;}
+
+header {text-align: center; padding: 40px 0; background-color: #f2e7d0; border-bottom: 3px solid #3498db; margin-bottom: 30px;}
+
+
+.highlight-text {font-weight: bold; color: #e74c3c;}
+
+.section-card {background-color: #f2e7d0; padding: 30px; border-radius: 8px;  
+box-shadow: 0 8px 10px rgba(0,0,0,0.05); margin-bottom: 25px;}
+
+
+.floating-sidebar {float: right; width: 300px; height:425px; margin: 0 0 20px 25px;  padding: 15px; background-color: #ecf0f1;
+border-left: 5px solid #0b253d; text-align: center;}
+
+.floating-sidebar img {width: 100%; height: auto; display: block; border-radius: 4px; margin-bottom: 10px;}
+
+.floating-sidebar p {font-size: 0.9rem; color: #555555; font-style: italic;}
+
+#trad-card {height:530px}
+
+footer {text-align: center; padding: 20px; background-color: #0b253d; color: #ffffff; position: fixed;
+bottom: 0; width: 100%; font-size: 0.85rem;}
